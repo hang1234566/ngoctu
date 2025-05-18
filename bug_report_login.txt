@@ -1,0 +1,39 @@
+Bug Report: Không đăng nhập được vào hệ thống quản lý học viên
+
+1. Thông tin chung
+Tiêu đề: Lỗi đăng nhập – hệ thống không phản hồi khi bấm "Đăng nhập"
+
+Mức độ nghiêm trọng (Severity): Medium
+
+Mức độ ưu tiên (Priority): High
+
+Môi trường:
+- Hệ điều hành: Windows 10 Pro 64-bit
+- Trình duyệt: Google Chrome 124.0.0.0
+- Phiên bản ứng dụng: v2.5.1
+- Kết nối mạng: Wi-Fi
+
+2. Mô tả lỗi
+Người dùng nhập đúng tên đăng nhập và mật khẩu nhưng khi bấm nút "Đăng nhập", không có phản hồi nào, không chuyển trang, không có thông báo lỗi. Console trình duyệt không hiện log nào bất thường.
+
+3. Bước để tái hiện lỗi
+- Truy cập: https://student-manager.example.com  
+- Nhập thông tin:  
+  + Tên đăng nhập: `user_test`  
+  + Mật khẩu: `12345678`  
+- Bấm nút "Đăng nhập"  
+- Quan sát hành vi ứng dụng
+
+4. Kết quả mong đợi
+Sau khi bấm "Đăng nhập", người dùng được chuyển tới trang dashboard hoặc có thông báo lỗi nếu thông tin không đúng.
+
+5. Kết quả thực tế
+Trang không chuyển, không có thông báo lỗi, và người dùng vẫn ở nguyên tại trang đăng nhập.
+
+6. Ảnh chụp màn hình / Video
+(Đính kèm nếu có – ảnh chụp màn hình trạng thái sau khi bấm "Đăng nhập")
+
+7. Ghi chú thêm
+- Đã thử với tài khoản khác nhưng vẫn gặp tình trạng tương tự  
+- Trên Firefox thì đăng nhập được bình thường  
+- Có thể liên quan đến JavaScript không hoạt động hoặc API không phản hồi
